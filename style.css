@@ -165,12 +165,16 @@ body {
 }
 
 .advCards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	position: relative;
 	font-size: 0.9rem;
 	text-align: center;
 	margin: 1rem;
 	padding: 0 0.8rem;
-	max-width: 30%;
+	max-width: 25rem;
 	height: 10rem;
 	border: 1px solid lightgray;
 	border-radius: 0.5rem;
@@ -254,4 +258,86 @@ h3::first-letter {
 	cursor: pointer;
 	background-color: var(--ctaBgColor);
 	color: white;
+}
+
+/*Enterprise container*/
+
+#containerEnterprise {
+	max-width: 80%;
+	margin: 10rem 0 5rem;
+}
+
+#ratedCont {
+	text-transform: capitalize;
+	text-align: center;
+	margin: 3rem auto;
+}
+
+#enterpCards {
+	position: relative;
+	max-width: 90%;
+}
+
+#customerCont {
+	margin: 3rem auto;
+	width: 80%;
+	height: 10rem;
+	background-color: var(--stdBgColor);
+	box-shadow: 2px 3px 5px lightgray;
+}
+
+#customerCont h3 {
+	margin: 1rem auto;
+	letter-spacing: 0.1rem;
+}
+
+/*Reviews container*/
+
+#containerReviews {
+	margin-bottom: 3rem;
+}
+
+#reviewTxt {
+	text-align: center;
+	margin: 0 auto 2rem;
+}
+
+#reviewTxt::first-letter, #reviewTxt p::first-letter {
+	text-transform: capitalize;
+}
+
+#rvwCarousel {
+	position: relative;
+	overflow: hidden;
+	max-width: 65%;
+	height: 10rem;
+}
+
+.carouselCard {
+	width: 40%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.carouselCard img {
+	position: absolute;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: var(--ctaBgColor);
 }
