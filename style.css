@@ -298,8 +298,8 @@ h3::first-letter {
 }
 
 #reviewTxt {
-	text-align: center;
 	margin: 0 auto 2rem;
+	text-align: center;
 }
 
 #reviewTxt::first-letter, #reviewTxt p::first-letter {
@@ -309,35 +309,92 @@ h3::first-letter {
 #rvwCarousel {
 	position: relative;
 	overflow: hidden;
-	max-width: 65%;
+	max-width: 70%;
 	height: 10rem;
 }
 
 .carouselCard {
-	width: 40%;
-	height: auto;
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
-	position: relative;
+	max-width: 40%;
+	height: 90%;
+	margin:0 1rem 0 3rem;
+	padding: 0 2rem 0 4rem;
+	border: 1px solid lightgray;
+	border-radius: 1rem;
+	box-shadow: 2px 3px 5px lightgray;	
 }
 
 .carouselCard img {
 	position: absolute;
+	top: 22;
+	left: -50;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	box-shadow: 2px 3px 5px lightgray;
+}
+
+.cltName {
+	text-transform: capitalize;	
+	font-weight: bold;
+}
+
+.cltTestimonial {
+	font-size: 0.8rem;
+	margin-top: 0.5rem;
+}
+
+.cltCompany {
+	font-size: 0.9rem;
+	text-transform: capitalize;	
 }
 
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	margin: 1rem 0.2rem 0;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
 }
 
 .dot:hover {
-  background-color: var(--ctaBgColor);
+	background-color: var(--ctaBgColor);
+}
+
+#prevBtn, #nextBtn {
+	cursor: pointer;
+	position: absolute;
+}
+
+#prevBtn {
+	left: 0;
+}
+
+#nextBtn {
+	right: 0;
+}
+
+/*footer container*/
+
+#containerFooter {
+	max-width: 100%;
+}
+
+#aboutCont {
+	margin: 1rem auto;
+}
+
+#aboutCont a, #aboutCont p{
+	font-size: 0.9rem;
+}
+
+.aboutFItem {
+	justify-content: flex-start;
 }
