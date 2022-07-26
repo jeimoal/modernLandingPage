@@ -24,8 +24,6 @@ body {
 	width: 100%;
 }
 
-
-
 /*utilities*/
 
 .flxCtr {display: flex; justify-content: center; align-items: center}
@@ -263,8 +261,15 @@ h3::first-letter {
 /*Enterprise container*/
 
 #containerEnterprise {
-	max-width: 80%;
+	max-width: 100%;
 	margin: 10rem 0 5rem;
+	background: url(_img/pxlBg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 75%;
+}
+
+#containerEnterprise .advCards {
+	color: white;
 }
 
 #ratedCont {
@@ -273,9 +278,13 @@ h3::first-letter {
 	margin: 3rem auto;
 }
 
+#ratedCont h2{
+	color: white;
+}
+
 #enterpCards {
 	position: relative;
-	max-width: 90%;
+	max-width: 80%;
 }
 
 #customerCont {
@@ -325,7 +334,7 @@ h3::first-letter {
 	padding: 0 2rem 0 4rem;
 	border: 1px solid lightgray;
 	border-radius: 0.3rem;
-	box-shadow: 2px 3px 5px lightgray;	
+	box-shadow: 2px 3px 5px lightgray;
 }
 
 .carouselCard img {
@@ -339,7 +348,7 @@ h3::first-letter {
 }
 
 .cltName {
-	text-transform: capitalize;	
+	text-transform: capitalize;
 	font-weight: bold;
 }
 
@@ -350,7 +359,7 @@ h3::first-letter {
 
 .cltCompany {
 	font-size: 0.9rem;
-	text-transform: capitalize;	
+	text-transform: capitalize;
 }
 
 .dot {
@@ -371,6 +380,14 @@ h3::first-letter {
 #prevBtn, #nextBtn {
 	cursor: pointer;
 	position: absolute;
+	text-align: center;
+	width: 25px;
+	height: 25px;
+	transition: background-color ease 0.2s;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+	background-color: rgba(0,0,0, .1);
 }
 
 #prevBtn {
@@ -424,5 +441,5 @@ h3::first-letter {
 #copyright {
 	text-align: center;
 	margin: 2rem auto;
-	font-size: 0.8rem;	
+	font-size: 0.8rem;
 }
