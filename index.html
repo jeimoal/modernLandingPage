@@ -14,7 +14,7 @@
 		<header id="containerHeader" class="flxCtr">
 			<div id="logoComp" class="flxCtr">
 				<figure id="compLogo">
-					<img src="logo.jfif" alt="company logo">
+					<img src="_img/logo.jfif" alt="company logo">
 				</figure>
 				<span>company name</span>
 			</div>
@@ -47,7 +47,7 @@
 				<a id="topDown" href="#containerFooter">&#11015</a>
 			</div>
 			<figure id="welcFig">
-				<img src="smm.png" alt="site interaction image">
+				<img src="_img/smm.png" alt="site interaction image">
 			</figure>
 		</div>
 
@@ -74,7 +74,7 @@
 		<div id="containerAutomate" class="flxCol">
 			<div id="autoCont" class="flxCtr">
 				<figure class="flxCtr">
-					<img src="consPain.png" alt="automate process ilustration">
+					<img src="_img/consPain.png" alt="automate process ilustration">
 				</figure>
 				<div class="autoTxt">
 					<h2>automate, customer, reviews, referrals</h2>
@@ -85,7 +85,7 @@
 
 			<div id="autoContRev" class="flxCtr">
 				<figure class="flxCtr">
-					<img src="talk2.png" alt="automate process ilustration">
+					<img src="_img/talk2.png" alt="automate process ilustration">
 				</figure>
 				<div class="autoTxt">
 					<h2>automate, customer, reviews, referrals</h2>
@@ -133,32 +133,74 @@
 				<p clas="stdTxt">testimonial</p>
 			</div>
 			<div id="rvwCarousel" class="flxCtr">
-				<div class="carouselCard">
-					<figure class="cardFig">
-						<img src="avatar_1F.png" alt="client photo">
-					</figure>
-						<p class="cltName">client name</p>
-						<p class="cltCompany">company</p>
-						<p class="cltTestimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<div class="reviews">
+					<div class="carouselCard">
+						<figure class="cardFig">
+							<img src="_img/avatar_1F.png" alt="client photo">
+						</figure>
+							<p class="cltName">client name</p>
+							<p class="cltCompany">company</p>
+							<p class="cltTestimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+					</div>
+
+					<div class="carouselCard">
+						<figure class="cardFig">
+							<img src="_img/avatar_1M.png" alt="client photo">
+						</figure>
+							<p class="cltName">client name</p>
+							<p class="cltCompany">company</p>
+							<p class="cltTestimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
 				</div>
 
-				<div class="carouselCard">
-					<figure class="cardFig">
-						<img src="avatar_1M.png" alt="client photo">
-					</figure>
-						<p class="cltName">client name</p>
-						<p class="cltCompany">company</p>
-						<p class="cltTestimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<div class="reviews">
+					<div class="carouselCard">
+						<figure class="cardFig">
+							<img src="_img/avatar_2F.png" alt="client photo">
+						</figure>
+							<p class="cltName">client name</p>
+							<p class="cltCompany">company</p>
+							<p class="cltTestimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+					</div>
+
+					<div class="carouselCard">
+						<figure class="cardFig">
+							<img src="_img/avatar_2M.png" alt="client photo">
+						</figure>
+							<p class="cltName">client name</p>
+							<p class="cltCompany">company</p>
+							<p class="cltTestimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
 				</div>
 
-				<a id="prevBtn">&#10094</a>
-				<a id="nextBtn">&#10095</a>
+				<div class="reviews">
+					<div class="carouselCard">
+						<figure class="cardFig">
+							<img src="_img/avatar_1M.png" alt="client photo">
+						</figure>
+							<p class="cltName">client name</p>
+							<p class="cltCompany">company</p>
+							<p class="cltTestimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+
+					<div class="carouselCard">
+						<figure class="cardFig">
+							<img src="_img/avatar_2F.png" alt="client photo">
+						</figure>
+							<p class="cltName">client name</p>
+							<p class="cltCompany">company</p>
+							<p class="cltTestimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+					</div>
+				</div>
+
+				<a id="prevBtn" onclick="plusSlides(-1)">&#10094</a>
+				<a id="nextBtn" onclick="plusSlides(1)">&#10095</a>
 			</div>
 
 			<div id="dots">
-				<span class="dot"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
 			</div>
 		</div>
 
@@ -169,10 +211,10 @@
 					<h3>about us</h3>
 					<p class="stdTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 					<figure id="aboutFig">
-						<a href="https://www.facebook.com/" target="_blank"><img src="icon_fb.png" alt="fbIcon"></a>
-						<a href="https://www.instagram.com/" target="_blank"><img src="icon_insta.png" alt="instIcon"></a>
-						<a href="https://www.github.com/jeimoal" target="_blank"><img src="icon_git.png" alt="gitIcon"></a>
-						<a href="https://www.linkedin.com/in/jeison-moura-alves-0b6428195/" target="_blank"><img src="icon_lkdn.png" alt="lkdnIcon"></a>
+						<a href="https://www.facebook.com/" target="_blank"><img src="_img/icon_fb.png" alt="fbIcon"></a>
+						<a href="https://www.instagram.com/" target="_blank"><img src="_img/icon_insta.png" alt="instIcon"></a>
+						<a href="https://www.github.com/jeimoal" target="_blank"><img src="_img/icon_git.png" alt="gitIcon"></a>
+						<a href="https://www.linkedin.com/in/jeison-moura-alves-0b6428195/" target="_blank"><img src="_img/icon_lkdn.png" alt="lkdnIcon"></a>
 					</figure>
 				</div>
 				<div class="aboutFItem flxCol">
@@ -209,4 +251,6 @@
 		</footer>
 	</div>
 </body>
+
+<script src="script.js"></script>
 </html>
