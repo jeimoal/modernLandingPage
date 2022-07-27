@@ -112,6 +112,12 @@ body {
 	align-items: flex-start;
 }
 
+#wlcFdbkInpt {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
 #wlcFdbkTxt p {
 	margin: 2rem 0;
 }
@@ -120,6 +126,7 @@ body {
 	cursor: text;
 	width: 10rem;
 	font-size: 0.7rem;
+	margin-right: 0.22rem;
 }
 
 #compName:focus {
@@ -131,7 +138,12 @@ body {
 }
 
 #takeAlookBtn {
+	font-family: Roboto, serif;
 	width: 2rem;
+}
+
+#takeAlookTxt, #compName {
+	font-size: 13.33px;
 }
 
 #topDown {
@@ -318,7 +330,7 @@ h3::first-letter {
 #rvwCarousel {
 	position: relative;
 	overflow: hidden;
-	max-width: 70%;
+	width: 70%;
 	height: 10rem;
 }
 
@@ -337,6 +349,7 @@ h3::first-letter {
 }
 
 .reviews {
+	max-width: 100%;
 	height: 100%;
 }
 
@@ -451,4 +464,187 @@ h3::first-letter {
 	text-align: center;
 	margin: 2rem auto;
 	font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+
+#containerWelcFeedback {
+	padding: 0 0 5rem 5rem;
+}
+
+#topDown {
+	top: 300;
+	left: 100;
+}
+
+#containerAdvantages {
+	max-width: 95%;
+}
+
+#containerAutomate {
+	max-width: 100%;
+}
+
+#enterpCards {
+	max-width: 90%;
+}
+
+#rvwCarousel {
+	width: 90%;
+}
+
+#containerFooter {
+	width: 100%;
+}
+
+}
+
+@media (max-width: 414px) {
+
+#containerHeader {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	background-color: var(--ctaBtnBg);
+}
+
+#register {
+	display: none;
+}
+
+#logoComp {
+	margin-top: 1rem;
+}
+
+#navMenu {
+	display: block;
+	padding: 1.5rem 0;
+}
+
+#containerWelcome {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	background-position: 100% 50%;
+}
+
+#containerWelcFeedback {
+	max-width: 90%;
+	padding: 0;
+}
+
+#topDown {
+	top: 320;
+	left: 0;
+}
+
+#welcFig {
+	width: 100%;
+}
+
+#containerAdvantages {
+	display: block;
+	height: auto;
+}
+
+#containerAdvantages .advCards {
+	margin: 3rem 1rem;
+}
+
+#autoCont, #autoContRev, #enterpCards, .autoTxt {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.autoTxt {
+	margin: 0;
+	width: 90%;
+	padding: 1rem;
+}
+
+.autoTxt h2, .autoTxt p {
+	text-align: center;
+}
+
+
+#containerEnterprise {
+	margin: 0;
+	background-size: 100% 93%;
+}
+
+#enterpCards .advCards {
+	margin: 1.6rem 1rem;
+}
+
+#customerCont {
+	margin: 0 auto;
+	width: 90%;
+	height: 8rem;
+}
+
+#customerCont h3 {
+	margin: 1rem auto;
+	letter-spacing: 0;
+}
+
+#containerReviews {
+    margin: 3rem auto;
+}
+
+#aboutCont {
+	width: 95%;
+	margin: 0;
+}
+
+#rvwCarousel {
+	max-width: 90%;
+	height: auto;
+}
+
+#reviewTxt {
+    margin: 0 auto 1rem;
+}
+
+#rvwCarousel .reviews{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+}
+
+#rvwCarousel .carouselCard {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	max-width: 70%;
+	height: 10rem;
+	margin: 1rem 0 1rem 0;
+	padding: 0 2rem 0 4rem;
+}
+
+#copyright {
+	margin: 1rem auto;
+}
+
+#aboutFig {
+	display: flex;
+	flex-flow: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	max-width: 80%;
+}
+
+#aboutFig a {
+	margin: 0.2rem;
+}
+
+.dot {
+	display: none;
+}
+
+/*media end*/
 }
