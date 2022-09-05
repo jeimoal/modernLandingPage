@@ -39,6 +39,48 @@ body {
 	text-transform: capitalize;
 }
 
+/*animation*/
+
+@keyframes lLoad {
+	from {
+		left: -50px;
+		opacity: 0;
+	} to {
+		left: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes rLoad {
+	from {
+		right: -50px;
+		opacity: 0;
+	} to {
+		right: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes upLoad {
+	from {
+		top: -50px;
+		opacity: 0;
+	} to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes downLoad {
+	from {
+		bottom: -50px;
+		opacity: 0;
+	} to {
+		bottom: 0;
+		opacity: 1;
+	}
+}
+
 /*header container*/
 
 #containerHeader {
@@ -96,8 +138,10 @@ body {
 }
 
 #welcFig {
+	position: relative;
 	width: 50%;
 	overflow: hidden;
+	animation: rLoad 1s;
 }
 
 #welcFig img {
@@ -110,6 +154,7 @@ body {
 	max-width: 50%;
 	justify-content: space-between;
 	align-items: flex-start;
+	animation: lLoad 1s;
 }
 
 #wlcFdbkInpt {
@@ -171,7 +216,9 @@ body {
 /*advantage container*/
 
 #containerAdvantages {
+	position: relative;
 	max-width: 70%;
+	animation: upLoad 1s;
 }
 
 .advCards {
@@ -223,14 +270,18 @@ h3::first-letter {
 }
 
 #autoCont {
+	position: relative;
 	max-width: 90%;
 	margin: 2rem 0;
+	animation: lLoad 1s;
 }
 
 #autoContRev {
+	position: relative;
 	flex-direction: row-reverse;
 	max-width: 90%;
 	margin: 2rem 0;
+	animation: rLoad 1s;
 }
 
 #autoCont figure img, #autoContRev figure img{
@@ -273,11 +324,13 @@ h3::first-letter {
 /*Enterprise container*/
 
 #containerEnterprise {
+	position: relative;
 	max-width: 100%;
 	margin: 3rem auto;
 	background: url(pxlBg.png);
 	background-repeat: no-repeat;
 	background-size: 100% 75%;
+	animation: upLoad 1s;
 }
 
 #containerEnterprise .advCards {
@@ -315,7 +368,9 @@ h3::first-letter {
 /*Reviews container*/
 
 #containerReviews {
+	position: relative;
 	margin-bottom: 3rem;
+	animation: downLoad 1s;
 }
 
 #reviewTxt {
