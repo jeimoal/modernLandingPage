@@ -591,6 +591,7 @@ h3::first-letter {
 #topDown {
 	top: 320;
 	left: 0;
+	z-index: 1;
 }
 
 #welcFig {
