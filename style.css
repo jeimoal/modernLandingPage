@@ -12,7 +12,7 @@
 --bgRotate: transform: rotate(-10deg);
 }
 
-* {box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth}
+* {box-sizing: border-box; margin:0; padding: 0}
 
 body {
 	font-family: Roboto, serif;
@@ -132,7 +132,7 @@ body {
 	height: 30rem;
 	width: 100%;
 	color: white;
-	background: url(secBg.png);
+	background: url(_img/secBg.png);
 	background-position: 100% 75%;
 	/*background: linear-gradient(rgba(71, 71, 209, 1), rgba(255, 255, 255, 0));*/
 }
@@ -141,11 +141,14 @@ body {
 	position: relative;
 	width: 50%;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
 	animation: rLoad 1s;
 }
 
-#welcFig img {
-	max-width: 90%;
+.resp {
+	width: 80%;
+	height: auto;
 }
 
 #containerWelcFeedback {
@@ -327,7 +330,7 @@ h3::first-letter {
 	position: relative;
 	max-width: 100%;
 	margin: 3rem auto;
-	background: url(pxlBg.png);
+	background: url(_img/pxlBg.png);
 	background-repeat: no-repeat;
 	background-size: 100% 75%;
 	animation: upLoad 1s;
@@ -554,7 +557,23 @@ h3::first-letter {
 
 }
 
-@media (max-width: 414px) {
+@media (min-width: 1400px) {
+
+#containerWelcome {
+	background-position: 100% 87%;
+}
+
+#welcFig {
+	width: 40%;
+}
+
+.resp {
+	max-width: 100%;
+}
+
+}
+
+@media (max-width: 576px) {
 
 #containerHeader {
 	display: flex;
